@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Five Nights at Diddy's</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="startMenu">
+  <h1>Five Nights at Diddy's</h1>
+  <button id="startBtn">Start Game</button>
+  <button id="customNightBtn">Custom Night</button>
+</div>
+
+<div id="gameContainer" style="display:none;">
+  <div id="office">
+    <canvas id="cameraView" width="640" height="360"></canvas>
+    <div class="controls">
+      <button id="doorLeftBtn">Door Left</button>
+      <button id="doorRightBtn">Door Right</button>
+      <button id="lightLeftBtn">Light Left</button>
+      <button id="lightRightBtn">Light Right</button>
+      <button id="changeCamBtn">Change Camera</button>
+    </div>
+    <div id="statusIndicators">
+      <div id="doorLeftStatus">Door Left: Closed</div>
+      <div id="doorRightStatus">Door Right: Closed</div>
+      <div id="power">Power: 100%</div>
+    </div>
+  </div>
+  <div id="gameOverScreen" style="display:none;">
+    <h2>Game Over: Diddy raped you</h2>
+    <button id="restartBtn">Restart</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
